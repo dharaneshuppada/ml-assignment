@@ -5,12 +5,12 @@ import pandas as pd
 st.title("Time-Wasters on Social Media Data Viewer")
 
 # Upload file section
-uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
+uploaded_file = st.file_uploader("Time-Wasters on Social Media.csv", type=["csv"])
 
 # If a file is uploaded, read and display it
 if uploaded_file is not None:
     # Read the uploaded CSV
-    df = pd.read_csv(uploaded_file)
+    df = pd.read_csv("Time-Wasters on Social Media.csv")
     
     # Display the dataframe
     st.write("Here is your data:")
